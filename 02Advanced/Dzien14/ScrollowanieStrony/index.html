@@ -11,20 +11,21 @@
 <body>
     <nav>
         <ul>
-            <li><a href="#">O mnie</a></li>
-            <li><a href="#">Info</a></li>
-            <li><a href="#">Forum</a></li>
-            <li><a href="#">Kontakt</a></li>
+            <li><a class="me" href="#">O mnie</a></li>
+            <li><a class="info" href="#">Info</a></li>
+            <li><a class="forum" href="#">Forum</a></li>
+            <li><a class="contact" href="#">Kontakt</a></li>
         </ul>
     </nav>
 
     <main>
-        <section class="section1">Sekcja 1</section>
-        <section class="section2">Sekcja 2</section>
-        <section class="section3">Sekcja 3</section>
-        <section class="section4">Sekcja 4</section>
+        <section data-section="me" class="section1">Sekcja 1</section>
+        <section data-section="info" class="section2">Sekcja 2</section>
+        <section data-section="forum" class="section3">Sekcja 3</section>
+        <section data-section="contact" class="section4">Sekcja 4</section>
     </main>
     <script src="jquery-3.5.1.min.js"></script>
+    <script src="type.js"></script>
 </body>
 
 </html>
