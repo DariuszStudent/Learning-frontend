@@ -1,0 +1,27 @@
+html {
+    font-family: fantasy;
+}
+
+.wrapper {
+    color: #fff;
+}
+
+.first {
+    background-color: rgb(255, 0, 0);
+    width: 50vw;
+    margin: 0 auto;
+}
+
+.second {
+    background-color: #00e;
+    height: 20vh;
+    margin-top: 100px;
+}
+
+.first > p {
+    font-size: 2em;
+}
+
+.second > p {
+    font-size: 1.5em;
+}

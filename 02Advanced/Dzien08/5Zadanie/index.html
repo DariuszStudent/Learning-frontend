@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: gray;
+        }
+
+        header {
+            position: relative;
+            top: 10vh;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 200px;
+            width: 500px;
+            border: 2px solid black;
+            box-shadow: 0 0 30px 40px;
+            background-color: rgb(57, 66, 141);
+            overflow: hidden;
+        }
+
+        header p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50vw, -50%);
+            font-family: 'Press Start 2P', cursive;
+            font-size: 50px;
+            animation: txt 0.5s linear infinite alternate;
+        }
+
+        button {
+            position: relative;
+            top: 50vh;
+            left: 50vw;
+            transform: translate(-50%, -50%);
+            width: 40vh;
+            height: 40vh;
+            border: 2px solid black;
+            box-shadow: 0 0 30px 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            overflow: hidden;
+            background-color: rgb(57, 66, 141);
+        }
+
+        .arrow i {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -40vh);
+            font-size: 300px;
+            animation: arrow 1s linear infinite;
+            text-shadow: 0 100px black, 0 -100px black;
+        }
+
+        .arrow i::after {
+            content: "";
+        }
+
+        @keyframes arrow {
+            100% {
+                transform: translate(-50%, 40vh);
+            }
+        }
+
+        @keyframes txt {
+            100% {
+                transform: translate(20vw, -50%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p>Animacja</p>
+    </header>
+    <button class="arrow">
+        <i class="fas fa-angle-down"></i>
+    </button>
+</body>
+
+</html>

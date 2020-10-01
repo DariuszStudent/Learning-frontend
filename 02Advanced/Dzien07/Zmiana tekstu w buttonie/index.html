@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --buttonHeight: 80px;
+        }
+
+        button {
+            position: absolute;
+            width: 300px;
+            height: var(--buttonHeight);
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            border: 2px solid black;
+            font-size: 30px;
+            line-height: var(--buttonHeight);
+            overflow: hidden;
+        }
+
+        button:hover span {
+            animation: buttonmove 0.7s linear both;
+        }
+
+        span {
+            display: block;
+        }
+
+        @keyframes buttonmove {
+            100% {
+                transform: translateY(-100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <button><span>Kup Teraz</span><span>Super okazja!</span></button>
+</body>
+
+</html>

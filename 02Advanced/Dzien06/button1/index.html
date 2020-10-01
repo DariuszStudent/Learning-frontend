@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        button {
+            position: relative;
+            margin-top: 100px;
+            font-size: 40px;
+            padding: 15px 40px;
+            border: 0;
+            background-color: transparent;
+        }
+
+        span {
+            position: absolute;
+            width: 0;
+            height: 5px;
+            left: 10%;
+            bottom: 7%;
+            background-color: black;
+            transition: 0.8s;
+        }
+
+        button:hover span {
+            width: 80%;
+        }
+    </style>
+</head>
+
+<body>
+    <button>Przycisk<span></span></button>
+</body>
+
+</html>

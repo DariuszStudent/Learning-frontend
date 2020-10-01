@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kalkulator</title>
+    <style>
+        /* wykorzystaj body do wycentrowania kalkulatora za pomocą flexboxa */
+
+        /* nie można zmieniać struktury html */
+
+        /* kalkulator ma 60% szerokości body ale nie mniej niz 500px */
+
+        /* wyświetlacz wyniku ma 15vh wysokości */
+
+        /* przyciski mają 10vh wysokości */
+
+        /* Panel bez wyświetlacza ma mieć wysokość 70vh (czyli z wyświetlaczem 85vh)*/
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .panel {
+            display: flex;
+            flex-wrap: wrap;
+            flex-basis: 60%;
+            min-width: 500px;
+            height: 85vh;
+            justify-content: space-between;
+            align-content: space-between;
+        }
+
+        .result {
+            padding: 0 5%;
+            flex-basis: 100%;
+            color: white;
+            background-color: black;
+            height: 15vh;
+            align-items: center;
+            text-align: right;
+            font-size: 8vh;
+            line-height: 15vh;
+        }
+
+        div.result~div {
+            display: flex;
+            flex-basis: 32%;
+            height: 10vh;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(86, 150, 202);
+            font-size: 7vh;
+            cursor: pointer;
+        }
+
+        .panel div+div:hover {
+            background-color: rgb(18, 113, 190);
+        }
+
+        .panel div:nth-last-child(1),
+        .panel div:nth-last-child(2) {
+            flex-basis: 49%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="panel">
+        <div class="result">2 343.99</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>+</div>
+        <div>0</div>
+        <div>-</div>
+        <div>/</div>
+        <div>.</div>
+        <div>*</div>
+        <div>C</div>
+        <div>=</div>
+    </div>
+</body>
+
+</html>

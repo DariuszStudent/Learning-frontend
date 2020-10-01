@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    :root {
+        --textSize: 80px;
+    }
+
+    body {
+        text-align: center;
+    }
+
+    button {
+        margin-top: 20px;
+        font-size: 40px;
+    }
+
+    h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: scale(1) translate(-50%, -50%);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: var(--textSize);
+    }
+
+    .large {
+        font-size: calc(var(--textSize) * 2)
+    }
+
+    .small {
+        font-size: calc(var(--textSize) / 2)
+    }
+
+    .bordere {
+        border: 5px solid black;
+    }
+</style>
+
+<body>
+    <button class="larger">2xWiększy</button>
+    <button class="smaller">2xMniejszy</button>
+    <button class="border">Obramowanie</button>
+    <h1>Nazwa</h1>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        $(".larger").click(function () {
+            $('h1').toggleClass('large')
+        })
+
+        $('.smaller').click(function () {
+            $('h1').toggleClass('small')
+        })
+
+        $('.border').click(function () {
+            $('h1').toggleClass('bordere')
+        })
+    </script>
+
+</body>
+
+</html>

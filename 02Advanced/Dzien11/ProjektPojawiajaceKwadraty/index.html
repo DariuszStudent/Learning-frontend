@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            font-size: 50px;
+            text-transform: uppercase;
+            margin: 50px 0;
+        }
+
+        .box {
+            float: left;
+            background-color: cadetblue;
+            transform: rotate(0);
+            animation: create 0.2s both;
+        }
+
+        @keyframes create {
+            0% {
+                opacity: 0;
+                width: 0px;
+                height: 0px;
+            }
+
+            100% {
+                opacity: 1;
+                transform: rotate(3600deg);
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <button class="js">Dawaj JS!</button>
+    <button class="jq">Dawaj JQ!</button>
+    <br>
+
+    <script>
+        const js = document.querySelector('.js');
+        const box = document.querySelector('.box')
+
+        // divItem.className = 'box';
+        // divItem.classList.add('box'); 
+        // divItem.setAttribute('class', 'box')
+
+        function createDiv() {
+            const divItem = document.createElement('div')
+            document.body.appendChild(divItem);
+            divItem.classList.add('box');
+        }
+
+        // divItem.id = "black";   dodanie 
+
+        js.addEventListener('click', createDiv)
+    </script>
+</body>
+
+</html>

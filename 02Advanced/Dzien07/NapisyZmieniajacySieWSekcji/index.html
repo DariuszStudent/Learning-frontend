@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section {
+            position: relative;
+            width: 80%;
+            height: 50vh;
+            top: 50vh;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: royalblue;
+            color: rgb(107, 11, 11);
+            overflow: hidden;
+        }
+
+        h1 {
+            position: absolute;
+            font-size: 100px;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            transform: translate(0, -50%);
+            text-transform: uppercase;
+            animation: text 15s linear infinite both;
+        }
+
+        h1:nth-child(2) {
+            animation-delay: 5s;
+        }
+
+        h1:nth-child(3) {
+            animation-delay: 10s;
+        }
+
+        @keyframes text {
+            0% {
+                transform: translate(100%, -50%);
+            }
+
+            5% {
+                transform: translate(100%, -50%);
+            }
+
+            10% {
+                transform: translate(0, -50%);
+            }
+
+            28% {
+                transform: translate(0, -50%);
+            }
+
+            33.33% {
+                transform: translate(-100%, -50%);
+            }
+
+            100% {
+                transform: translate(-100%, -50%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>tanio</h1>
+        <h1>szybko</h1>
+        <h1>średnio</h1>
+    </section>
+</body>
+
+</html>

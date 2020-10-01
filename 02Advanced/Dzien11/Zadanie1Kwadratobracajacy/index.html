@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .btn {
+        font-size: 50px;
+    }
+
+    .square {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(0);
+        width: 10vh;
+        height: 10vh;
+        background-color: #000;
+
+    }
+
+    .rotate {
+        transition: 0.5s;
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+</style>
+
+<body>
+    <button class="btn">Obróć</button>
+    <div class="square"></div>
+
+    <script>
+        const btn = document.querySelector('.btn');
+        const square = document.querySelector('.square');
+
+        let rotate = 0;
+        let rotateImprove = 10;
+
+        // function squareRotate() {
+        //     rotate += rotateImprove;
+        //     square.style.transform = "translate(-50%, -50%) rotate(" + rotate + "deg)";
+        // }
+
+        function squareRotate() {
+            rotate += rotateImprove;
+            square.classList.add('rotate')
+        }
+
+        btn.addEventListener('click', squareRotate)
+    </script>
+</body>
+
+</html>

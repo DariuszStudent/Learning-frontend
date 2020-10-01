@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;700&family=Saira:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Saira', sans-serif;
+    font-size: 10px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: 'Saira Condensed';
+    font-size: 2.4em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Saira Condensed';
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: 'Saira';
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+
+/* -------------------------HEADER------------------------- */
+
+header {
+    position: relative;
+    height: 100vh;
+    background-color: #29a6dc;
+    overflow: hidden;
+}
+
+header > * {
+    position: absolute;
+}
+
+header .welcome {
+    width: 100%;
+    z-index: 1;
+    top: 30px;
+    left: 2%;
+    right: 2%;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+
+header img {
+    bottom: 0;
+    height: 55%;
+    right: -15%;
+}
+
+header .hello {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+header div.welcome h1 {
+    font-size: 2em;
+}
+
+header h1 p.name {
+    font-weight: bold;
+}
+
+header h1 p.company {
+    font-weight: 400;
+}
+
+header button {
+    margin-top: 6%;
+    padding: 0 20px;
+    border: 1px solid white;
+    background-color: transparent;
+    font-family: 'Saira', sans-serif;
+    font-size: 1.2em;
+    line-height: 30px;
+    color: white;
+    text-transform: uppercase;
+}
+
+/*-----------------------SECTION 1---------------------*/
+
+section {
+    min-height: 30vh;
+}
+
+.features div:nth-last-of-type(1) {
+    display: none;
+}
+
+.features {
+    padding: 7% 12%;
+    text-align: center;
+}
+
+.feature img {
+    padding: 5% 0;
+    max-width: 375px;
+    width: 70%;
+}
+
+.features p {
+    font-size: 1.2em;
+}
+
+/*-----------------------SECTION 2---------------------*/
+
+section.portfolio {
+    background: #1e1e1e;
+    color: white;
+    padding-bottom: 7%;
+}
+
+div.project {
+    margin-bottom: 7%;
+}
+
+div.project:nth-last-of-type(1) {
+    margin-bottom: 0;
+}
+
+.portfolio .project:nth-of-type(odd) {
+    background-color: #0170ba;
+}
+
+.portfolio .project:nth-of-type(even) {
+    background-color: #ff4f2c;
+}
+
+div.title {
+    padding: 7% 2% 7% 2%;
+}
+
+.about {
+    overflow: hidden;
+    padding-right: 5%;
+}
+
+.about h4 {
+    padding: 5% 10% 3%;
+    border-bottom: 1px solid white;
+}
+
+.about p {
+    padding: 5% 10%;
+    font-size: 1.2em;
+    border-bottom
+}
+
+div.web {
+    text-align: center;
+}
+
+.web img {
+    display: inline-block;
+    width: 100%;
+    max-width: 780px;
+}

@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    height: 300vh;
+}
+
+.wrap {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+nav.desktop,
+header {
+    height: 360px;
+}
+
+nav.desktop {
+    float: left;
+    width: 300px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav.desktop a {
+    display: inline-block;
+    line-height: 72px;
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    padding: 0 5px 0 20px;
+
+}
+
+nav.desktop i {
+    width: 50px;
+    border-right: 2px solid black;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+
+nav.desktop a:hover i {
+    margin-right: 50px;
+}
+
+header {
+    float: left;
+    width: calc(100% - 300px);
+    background-color: aquamarine;
+    background-image: url("pianino.jpg");
+    background-size: cover;
+}
+
+section {
+    margin-top: 50px;
+}
+
+section h1 {
+    background-color: gray;
+    font-size: 3em;
+    line-height: 2em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+nav.mobile {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    body {
+        margin-left: 72px;
+    }
+
+    nav.desktop {
+        display: none;
+    }
+
+    nav.mobile {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: block;
+        height: 100%;
+        width: 72px;
+        background-color: black;
+    }
+
+    nav.mobile a {
+        display: block;
+        line-height: 20vh;
+        color: white;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    nav.mobile a:hover {
+        color: orange;
+    }
+
+    nav.mobile li:nth-child(3) a:hover {
+        color: green;
+    }
+
+    header {
+        width: 100%;
+    }
+}

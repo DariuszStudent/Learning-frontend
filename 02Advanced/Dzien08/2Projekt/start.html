@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Slider</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        * img {
+            position: absolute;
+            display: block;
+            width: 100%;
+        }
+
+        * h1 {
+            position: absolute;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.384);
+            padding: 10px 40px;
+        }
+
+        header {
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        img:nth-of-type(1) {
+            animation: SlideHeader 9s infinite;
+        }
+
+        h1:nth-of-type(1) {
+            top: 70vh;
+            left: 70%;
+            animation: SlideHeader 9s infinite;
+        }
+
+        img:nth-of-type(2) {
+            opacity: 0;
+            animation: SlideHeader 9s infinite;
+            animation-delay: 3s;
+        }
+
+        h1:nth-of-type(2) {
+            opacity: 0;
+            top: 10vh;
+            left: 10%;
+            animation: SlideHeader 9s infinite;
+            animation-delay: 3s;
+        }
+
+        img:nth-of-type(3) {
+            opacity: 0;
+            animation: SlideHeader 9s infinite;
+            animation-delay: 6s;
+        }
+
+        h1:nth-of-type(3) {
+            opacity: 0;
+            top: 60vh;
+            left: 10%;
+            animation: SlideHeader 9s infinite;
+            animation-delay: 6s;
+        }
+
+        @keyframes SlideHeader {
+            0% {
+                opacity: 0;
+            }
+
+            33.33% {
+                opacity: 1;
+            }
+
+            66.66% {
+                opacity: 0;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <img src="pic1.jpg" alt="">
+        <img src="pic2.jpg" alt="">
+        <img src="pic3.jpg" alt="">
+        <h1>Japonia</h1>
+        <h1>Polska</h1>
+        <h1>Kanada</h1>
+    </header>
+</body>
+
+</html>

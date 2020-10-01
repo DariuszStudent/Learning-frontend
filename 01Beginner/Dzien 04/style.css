@@ -1,0 +1,36 @@
+<style > * {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 100vw;
+    margin: 0 auto;
+}
+
+header {
+    display: block;
+}
+
+img {
+    width: 100%;
+}
+
+.header {
+    float: left;
+    margin: 0 auto;
+    width: 50%;
+}
+
+nav {
+    width: 100%;
+}
+
+li {
+    text-align: center;
+    background-color: #ff2233;
+    float: left;
+    width: 20%;
+}
+
+</style >

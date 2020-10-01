@@ -1,0 +1,51 @@
+<!-- 2048w 314h -->
+<!-- 256px 1 kadr -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: scale(1, 1);
+            background-image: url("walking.png");
+            width: 256px;
+            height: 314px;
+            animation: walk 1s infinite steps(8), move 10s infinite linear;
+        }
+
+        @keyframes walk {
+            100% {
+                background-position-x: calc(-256px * 8);
+            }
+        }
+
+        @keyframes move {
+            50% {
+                left: calc(100% - 256px/1.5);
+                transform: scale(0.5, 0.5);
+            }
+
+            50.1% {
+                transform: scale(-0.5, 0.5);
+            }
+
+            100% {
+                left: 0;
+                transform: scale(0, 0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section></section>
+</body>
+
+</html>

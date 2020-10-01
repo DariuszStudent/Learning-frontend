@@ -1,0 +1,5 @@
+$('.nav_me').on('click', function () {
+    $('body, html').animate({
+        scrollTop: "1000px"
+    }, 2000)
+})

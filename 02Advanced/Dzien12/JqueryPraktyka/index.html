@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="item1">Div Item1</div>
+    <div class="item2">Div Item2</div>
+    <div>Div Item1</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ullam fugiat quam corrupti quis natus dolorum. Quos,
+        officia repellendus, non aspernatur quisquam porro aut itaque neque eligendi eum voluptas amet? Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Eum ad expedita dolorem illum, reiciendis ex hic esse iste eaque
+        explicabo nisi sapiente, recusandae tempora nihil voluptas corporis aut atque sit.</p>
+    <p>Lorem, ipsum.</p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        // console.log($('*'));
+        // console.log($('.item2').text());
+        // console.log($('*').length)
+        $(document).ready(function () {
+            console.log($('*'));
+            console.log($('*').length)
+        })
+
+        const $p = $('p');
+        console.log($p.text());
+
+        // $('p').text('tutaj');
+        // $('html').html();
+
+        const $titleH1 = $('<h1 class="red">Tytuł artykułu</hq>');
+        $('div').before($titleH1)
+        $('p').after($titleH1)
+
+        document.body.appendChild($titleH1[0]);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            align-items: center;
+            background-color: #aaa;
+            font-size: 40px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            max-width: 1600px;
+        }
+
+        nav {
+            flex-basis: 20%;
+            height: 30vh;
+            min-height: 200px;
+            background-color: rgb(0, 0, 0);
+            line-height: 30vh;
+            text-align: center;
+        }
+
+        .logo {
+            position: relative;
+            flex-grow: 1;
+            height: 30vh;
+            min-height: 200px;
+            background-color: rgba(0, 0, 0, 0.493);
+        }
+
+        .logo h1 {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        section {
+            display: flex;
+            width: 100%;
+            max-width: 1700px;
+            flex-grow: 1;
+        }
+
+        main {
+            flex-basis: 75%;
+            background-color: rgb(8, 107, 199);
+        }
+
+        aside {
+            flex-basis: 25%;
+            min-width: 200px;
+            background-color: rgb(1, 25, 48);
+        }
+
+        footer {
+            flex-basis: 8vh;
+            width: 100%;
+            max-width: 1600px;
+            line-height: 8vh;
+            text-align: center;
+            background-color: #000;
+        }
+
+        @media (max-width: 900px) {
+            body {
+                font-size: 20px;
+                width: 100%;
+            }
+
+            header {
+                flex-direction: column-reverse;
+            }
+
+            nav {
+                flex-basis: 10vh;
+                line-height: 10vh;
+                min-height: auto;
+            }
+
+            .logo {
+                flex-basis: 20vh;
+                min-height: auto;
+            }
+
+            .logo h1 {
+                top: 0;
+                left: 0;
+            }
+
+            section {
+                flex-direction: column;
+
+            }
+
+            main {
+                flex-basis: 50vh;
+            }
+
+            aside {
+                flex-basis: 15vh;
+            }
+
+            footer {
+                flex-basis: 5vh;
+                line-height: 5vh;
+                font-size: 3vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>Nawigacja</nav>
+        <div class="logo">
+            <h1>Header</h1>
+        </div>
+    </header>
+    <section>
+        <main>Główna treść</main>
+        <aside>Reklama</aside>
+    </section>
+    <footer>Stopka</footer>
+</body>
+
+</html>
