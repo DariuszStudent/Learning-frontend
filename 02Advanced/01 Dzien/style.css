@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+}
+
+header {
+    position: relative;
+    height: 80vh;
+    background-color: #705caf;
+}
+
+div.welcome {
+    position: absolute;
+    left: 5%;
+    width: 90%;
+    padding-top: 10%;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+.welcome p {
+    font-size: 2rem;
+}
+
+.welcome button {
+    margin-top: 10%;
+}
+
+header img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+section {
+    height: 30vh;
+}

@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 32px;
+    font-weight: 500;
+    font-family: arial, sans-serif;
+}
+
+a {
+    display: inline-block;
+    width: 260px;
+    text-decoration: none;
+    background-color: black;
+    color: orange;
+    text-transform: uppercase;
+    padding: 20px 0;
+    text-align: center;
+    border: 3px solid orange;
+    transition: 0.3s;
+}
+
+a:hover {
+    background-color: #333;
+    color: white;
+    border: 3px solid black;
+}

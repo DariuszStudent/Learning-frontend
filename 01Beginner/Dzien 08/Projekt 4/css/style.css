@@ -1,0 +1,73 @@
+/*           ROBOTO           */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: roboto, arial, sans-serif;
+}
+
+.wrapper {
+    background-color: #aaa;
+}
+
+/*           Nawigacja          */
+nav {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 0;
+    background-color: #888;
+    padding: 30px 0;
+    text-align: right;
+}
+
+nav a {
+    display: inline-block;
+    font-size: 1.4rem;
+    font-family: verdana;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #444;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+nav a.reservetion {
+    padding: 10px 30px;
+    margin: 0 20px;
+    border: 2px solid #444;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    transition: .2s;
+}
+
+nav a.reservetion:hover {
+    background-color: #222;
+    color: white;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #444;
+    color: black;
+}
+
+/*          HEADER             */
+
+header {
+    background-image: url('logo.jpg');
+    background-size: cover;
+    height: 40vh;
+}
+
+header h1 {
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    line-height: 40vh;
+    background-color: rgba(0, 0, 0, 50%);
+}

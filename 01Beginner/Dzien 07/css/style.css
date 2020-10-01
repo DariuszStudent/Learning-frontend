@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 80vw;
+    background-color: #444;
+    height: 40vh;
+    margin: 0 auto;
+}
+
+button {
+    display: block;
+    margin: 100px auto;
+    position: relative;
+    line-height: 50%;
+    background-color: #2f4;
+    border: 2px solid black;
+    font-size: 34px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    padding: 10px 20px;
+
+}
+
+button:hover {
+    background-color: coral;
+    color: white;
+    transition: 0.5s;
+}

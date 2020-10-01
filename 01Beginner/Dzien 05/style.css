@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Open Sans Condensed', verdana, sans-serif;
+    background-color: gray;
+}
+
+.zdanie1 {
+    font-size: 5vh;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 100vh;
+    text-decoration: underline;
+    color: white;
+}
+
+.wrapper {
+    width: 60vw;
+    margin: 0 auto;
+    border: 5px solid white;
+}
+
+div + div {
+    padding: 10vw 0;
+    border-top: 3px solid white;
+}
+
+.text1 {
+    background-color: #ff22ee
+}
+
+.text2 {
+    text-align: center;
+}
+
+.text3 {
+    text-align: justify;
+}
+
+.text2:hover {
+    background-color: #2f4;
+    text-decoration: line-through;
+    letter-spacing: 3px;
+    color: white;
+    font-weight: 900;
+}

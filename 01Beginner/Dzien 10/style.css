@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: arial, sans-serif;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+header div {
+    width: 20%;
+    height: 150px;
+    margin: 4% 0 4% 4%;
+    background-color: #fff;
+    float: left;
+}
+
+header div:nth-child(1) {
+    background-color: #2f2;
+}
+
+header div:nth-child(2) {
+    background-color: #af2;
+}
+
+header div:nth-child(3) {
+    background-color: #f32;
+}
+
+header div:nth-child(4) {
+    background-color: #aa2;
+}
+
+header div:nth-child(1):hover {
+    background-color: black;
+}
+
+header div:nth-child(2):hover {
+    background-color: red;
+}
+
+header div:nth-child(3):hover {
+    background-color: rebeccapurple;
+}
+
+header div:nth-child(4):hover {
+    background-color: royalblue;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px 20px;
+}
+
+nav ul {
+    max-width: 1024px;
+    margin: 0 auto;
+    list-style: none;
+}
+
+nav ul li {
+    float: left;
+    width: 20%;
+    margin: 0 2.5%;
+}
+
+nav ul li a {
+    display: block;
+    line-height: 40px;
+    border: 2px solid black;
+    background-color: #999;
+    color: white;
+    text-align: center;
+    font-size: 26px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: white;
+    background-color: #000;
+}
+
+div.blog {
+    max-width: 1024px;
+    margin: 50px auto 0;
+}
+
+main {
+    width: 65%;
+    float: left;
+    padding: 3%;
+}
+
+article img {
+    width: 150px;
+    float: left;
+    margin: 20px;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+article {
+    border-bottom: 2px solid black;
+}
+
+article p {
+    margin-top: 20px;
+    text-align: justify;
+}
+
+aside {
+    min-height: 300px;
+    width: 30%;
+    float: left;
+    color: white;
+}
+
+section.contact {
+    background-color: #444;
+    padding: 15px;
+}
+
+section.contact p {
+    margin-bottom: 24px;
+    font-weight: bold;
+}
+
+section.contact ul {
+    list-style: none;
+}
+
+section.contact a {
+    text-decoration: none;
+    color: white;
+}
+
+section.contact li i {
+    margin-right: 20px;
+    color: #aaa;
+    font-size: 30px;
+}
+
+section.news {
+    margin-top: 20px;
+    background-color: #444;
+    padding: 15px;
+}
+
+footer {
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-top: 40px;
+    background-color: #444;
+    color: white;
+    line-height: 50px;
+    text-align: center;
+}

@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    background-color: #555;
+    overflow: auto;
+}
+
+.item1 {
+    width: 60%;
+    min-height: 600px;
+    background-color: royalblue;
+    border: 10px solid black;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-top: 30px;
+    float: left;
+}
+
+.item2 {
+    width: 40%;
+    min-height: 600px;
+    background-color: darkgoldenrod;
+    float: right;
+}

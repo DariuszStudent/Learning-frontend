@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: arial, sans-serif;
+}
+
+div.profile {
+    position: relative;
+    margin: 0 auto;
+    width: 800px;
+    background-color: #888;
+    padding: 20px;
+}
+
+img.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 3px black;
+}
+
+div.answer {
+    position: absolute;
+    top: 0;
+    right: 100px;
+    width: 60%;
+}
