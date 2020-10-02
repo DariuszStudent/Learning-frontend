@@ -17,4 +17,3 @@ $(document).on('scroll', function () {
         $('.info').removeClass('active');
     }
 })
-
