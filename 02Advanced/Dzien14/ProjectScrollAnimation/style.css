@@ -10,7 +10,9 @@ html {
 
 body {
     display: flex;
+    min-height: 100vh;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 nav {
@@ -19,7 +21,7 @@ nav {
 }
 
 header {
-    flex-basis: 200px;
+    flex-basis: 70vh;
     background-color: rgb(43, 124, 162);
 }
 
@@ -32,15 +34,67 @@ section {
 article {
     display: flex;
     flex-direction: column;
+    transition: 1s;
 }
 
-article img {
+.about .art2, .about .art4 {
+    transform: translateX(-100%);
+}
+
+.about .art3 {
+    transform: translateX(100%);
+}
+
+.about .art2.active, .about .art3.active, .about .art4.active  {
+    transform: translateX(0);
+}
+
+.about img {
     float: left;
-    width: 30%;
+    margin: 10px;
+    width: 35%;
+}
+
+.quotes {
+    margin: 2%;
+}
+
+article p {
+    padding: 30px;
+    font-size: 1.3rem;
+}
+
+span {
+    color: blue;
+}
+
+h1 {
+    padding: 100px 0;
+    font-size: 3rem;
 }
 
 h2 {
-    display: block;
-    width: 100%;
+    font-size: 2rem;
+    background-color: #3e5891;
+    padding: 10px 0 10px 50px;
+    text-transform: uppercase;
+}
+
+.quotes article  {
+    transform: scale(0);
+}
+
+.quotes article.active {
+    transform: scale(1);
+}
+
+/* --------------------------------------------------------------------- */
+
+footer {
+    flex-basis: 60px;
+    background-color: #0a152c;
+    color:white;
     text-align: center;
+    line-height: 60px;
+    font-size: 1.5rem;
 }
