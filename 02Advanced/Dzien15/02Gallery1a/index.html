@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria</title>
+    <link href="dist/css/lightbox.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,16 +16,24 @@
             <h1>portale internetowe</h1>
         </div>
         <div class="images">
-            <a href="img/1.jpg"><img src="img/thumb1.jpg" alt="miniatura"></a>
-            <a href="img/2.jpg"><img src="img/thumb2.jpg" alt="miniatura"></a>
-            <a href="img/3.jpg"><img src="img/thumb3.jpg" alt="miniatura"></a>
-            <a href="img/4.jpg"><img src="img/thumb4.jpg" alt="miniatura"></a>
-            <a href="img/5.jpg"><img src="img/thumb5.jpg" alt="miniatura"></a>
-            <a href="img/6.jpg"><img src="img/thumb6.jpg" alt="miniatura"></a>
-            <a href="img/7.jpg"><img src="img/thumb7.jpg" alt="miniatura"></a>
-            <a href="img/8.jpg"><img src="img/thumb8.jpg" alt="miniatura"></a>
+            <a href="img/1.jpg" data-lightbox="roadtrip"><img src="img/thumb1.jpg" alt="miniatura"></a>
+            <a href="img/2.jpg" data-lightbox="roadtrip"><img src="img/thumb2.jpg" alt="miniatura"></a>
+            <a href="img/3.jpg" data-lightbox="roadtrip"><img src="img/thumb3.jpg" alt="miniatura"></a>
+            <a href="img/4.jpg" data-lightbox="roadtrip"><img src="img/thumb4.jpg" alt="miniatura"></a>
+            <a href="img/5.jpg" data-lightbox="roadtrip"><img src="img/thumb5.jpg" alt="miniatura"></a>
+            <a href="img/6.jpg" data-lightbox="roadtrip"><img src="img/thumb6.jpg" alt="miniatura"></a>
+            <a href="img/7.jpg" data-lightbox="roadtrip"><img src="img/thumb7.jpg" alt="miniatura"></a>
+            <a href="img/8.jpg" data-lightbox="roadtrip"><img src="img/thumb8.jpg" alt="miniatura"></a>
         </div>
     </section>
+
+    <script src="src/jquery-3.2.1.min.js"></script>
+    <script src="dist/js/lightbox.js"></script>
+    <script>
+        lightbox.option({
+      'albumLabel': 'Zdjęcie %1 z %2'
+    })
+    </script>
 </body>
 
 </html>
